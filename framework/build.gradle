@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'org.wtu'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    //maven{url 'https://maven.aliyun.com/repository/google'}
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-core', version: '8.5.23'
+    compile group: 'cglib', name: 'cglib', version: '2.2.2'
+}
