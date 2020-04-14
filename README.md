@@ -13,7 +13,7 @@ This mvc framework have a same use method as Spring mvc!
 ProceedingJointPoint Around advice
 
 ## Examples
-> Around advice
+> Around advice  
 ```
 @Component
 @Aspect
@@ -29,3 +29,17 @@ public class SalaryAspect {
     }
 }
 ```
+
+## Details  
+Our project maintains a mapping between the Aspect methods and the proxied methods.
+```
+public class AspectMethodToReflectMethod {
+    
+    private Class<?> aspect_cls;
+    private Method aspect_method;
+
+    private Class<?> reflect_cls;
+    private List<Method> method_list;
+}
+```
+This class is initialized when the framework starts.When executing the proxied method.First,check out the corresponding aspect method.Second,find out proxied method parameters and send to ProceedingJointPoint.Third,send ProceedingJointPoint to the parameter of aspect method.Finally,perform the faceted method by reflection.
