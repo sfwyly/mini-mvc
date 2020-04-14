@@ -7,7 +7,7 @@ A simple MVC framework
 3.AOP 
 
 ## Use
-This mvc framework have a same use method as Spring mvc!
+This mvc framework have a same use method as Spring mvc! **But Different implementations**
 
 ## Recently
 ProceedingJointPoint Around advice
