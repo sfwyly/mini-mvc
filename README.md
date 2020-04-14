@@ -1,19 +1,19 @@
 # mini-mvc
-一个简单的mvc框架
+A simple MVC framework
 
-## 支持  
+## Support  
 1.IOC  
 2.DispatcherServlet  
 3.AOP 
 
-## 使用
-支持与Spring MVC 同样的注解使用  
+## Use
+This mvc framework have a same use method as Spring mvc!
 
-## 最近更新
-ProceedingJointPoint环绕通知  
+## Recently
+ProceedingJointPoint Around advice
 
-## 使用示例
-> 环绕通知  
+## Examples
+> Around advice
 ```
 @Component
 @Aspect
